@@ -1,5 +1,5 @@
 {
-    "name": "HJ",
+    "name": "HF",
     "author": "rolika",
     "_version": "3.1.0",
     "_release": "3",
@@ -389,7 +389,22 @@
                     "symbol": "trigger_0",
                     "width": 2,
                     "height": 1,
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "T0",
+                                "operation": "set",
+                                "other": "false",
+                                "vectorY": "L0",
+                                "value": "0",
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": false
+                            },
+                            "id": "1eaa2af5-7ce0-480b-8769-6fadaf14fbc4"
+                        }
+                    ],
                     "leaveScript": []
                 },
                 {
@@ -400,7 +415,22 @@
                     "symbol": "trigger_1",
                     "width": 1,
                     "height": 2,
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "T0",
+                                "operation": "set",
+                                "other": "false",
+                                "vectorY": "L0",
+                                "value": "0",
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": false
+                            },
+                            "id": "60061002-98c8-45b7-9e15-cfbb96466777"
+                        }
+                    ],
                     "leaveScript": []
                 },
                 {
@@ -416,11 +446,26 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Watch out, the fog\nthickens!"
+                                    "Watch out, the fog\nthickens!",
+                                    "Get some fresh\nair!"
                                 ],
                                 "avatarId": ""
                             },
                             "id": "e7527205-9eda-4ee2-bf69-82b277c33da2"
+                        },
+                        {
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "T0",
+                                "operation": "set",
+                                "other": "true",
+                                "vectorY": "L0",
+                                "value": "0",
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": false
+                            },
+                            "id": "ce60a0f7-88de-43bb-87c3-136dcb6f1c50"
                         }
                     ],
                     "leaveScript": []
@@ -455,7 +500,53 @@
                     "symbol": "trigger_5",
                     "width": 2,
                     "height": 1,
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_IF_TRUE",
+                            "args": {
+                                "variable": "T0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "The fog suffocated\nyou!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "3990e813-f925-4f38-a081-e5c63734a938"
+                                    },
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "8c9f2fb1-3a8c-4ea2-91b5-9743e8060d11",
+                                            "x": 4,
+                                            "y": 0,
+                                            "direction": "down",
+                                            "fadeSpeed": "2"
+                                        },
+                                        "id": "51b341f4-4c94-4487-b7e9-0d3d5b6a317f"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Hurry, teh fog\nsuffocates you!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "f3dfd66f-b411-43c1-aef8-d61c5e0706b5"
+                                    }
+                                ]
+                            },
+                            "id": "f7c35840-adbe-45c0-a749-8fd30af95f71"
+                        }
+                    ],
                     "leaveScript": []
                 },
                 {
@@ -481,7 +572,15 @@
                     "leaveScript": []
                 }
             ],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_SET_FALSE",
+                    "args": {
+                        "variable": "T0"
+                    },
+                    "id": "a6e6c83f-99fa-4a1d-9780-fd39520e23b8"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
@@ -507,7 +606,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "poison_mist_level.png"
+            "filename": "poison_mist_level.png",
+            "tileColors": []
         }
     ],
     "spriteSheets": [
