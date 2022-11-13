@@ -403,35 +403,24 @@
                                 "clamp": false
                             },
                             "id": "1eaa2af5-7ce0-480b-8769-6fadaf14fbc4"
-                        }
-                    ],
-                    "leaveScript": []
-                },
-                {
-                    "name": "",
-                    "id": "b281721e-3343-46ca-845c-d29232ecc28a",
-                    "x": 16,
-                    "y": 12,
-                    "symbol": "trigger_1",
-                    "width": 1,
-                    "height": 2,
-                    "script": [
+                        },
                         {
                             "command": "EVENT_VARIABLE_MATH",
                             "args": {
-                                "vectorX": "T0",
+                                "vectorX": "T1",
                                 "operation": "set",
-                                "other": "false",
+                                "other": "true",
                                 "vectorY": "L0",
                                 "value": "0",
                                 "minValue": "0",
                                 "maxValue": "32767",
                                 "clamp": false
                             },
-                            "id": "60061002-98c8-45b7-9e15-cfbb96466777"
+                            "id": "c888f2ab-b576-4c67-bd1c-6b33bfe2137a"
                         }
                     ],
-                    "leaveScript": []
+                    "leaveScript": [],
+                    "notes": ""
                 },
                 {
                     "name": "WrongWayTrigger",
@@ -513,22 +502,47 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "The fog suffocated\nyou!"
+                                                "You succumbed to\nthe murk."
                                             ],
                                             "avatarId": ""
                                         },
                                         "id": "3990e813-f925-4f38-a081-e5c63734a938"
                                     },
                                     {
-                                        "command": "EVENT_SWITCH_SCENE",
+                                        "command": "EVENT_IF_TRUE",
                                         "args": {
-                                            "sceneId": "8c9f2fb1-3a8c-4ea2-91b5-9743e8060d11",
-                                            "x": 4,
-                                            "y": 0,
-                                            "direction": "down",
-                                            "fadeSpeed": "2"
+                                            "variable": "T1",
+                                            "__collapseElse": false
                                         },
-                                        "id": "51b341f4-4c94-4487-b7e9-0d3d5b6a317f"
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "8c9f2fb1-3a8c-4ea2-91b5-9743e8060d11",
+                                                        "x": 4,
+                                                        "y": 0,
+                                                        "direction": "down",
+                                                        "fadeSpeed": "2"
+                                                    },
+                                                    "id": "51b341f4-4c94-4487-b7e9-0d3d5b6a317f"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "8c9f2fb1-3a8c-4ea2-91b5-9743e8060d11",
+                                                        "x": 18,
+                                                        "y": 13,
+                                                        "direction": "left",
+                                                        "fadeSpeed": "2"
+                                                    },
+                                                    "id": "44d0e78d-dc6a-4feb-95df-4b41dbda1b32"
+                                                }
+                                            ]
+                                        },
+                                        "id": "c72e006a-6806-4293-8ec4-e7093f6ac31d"
                                     }
                                 ],
                                 "false": [
@@ -536,7 +550,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Hurry, teh fog\nsuffocates you!"
+                                                "Hurry, the fog\nsuffocates you!"
                                             ],
                                             "avatarId": ""
                                         },
@@ -559,17 +573,82 @@
                     "height": 2,
                     "script": [
                         {
-                            "command": "EVENT_TEXT",
+                            "command": "EVENT_IF_TRUE",
                             "args": {
-                                "text": [
-                                    "You are almost\nthere!"
-                                ],
-                                "avatarId": ""
+                                "variable": "T1",
+                                "__collapseElse": false
                             },
-                            "id": "ff97c3b7-f12d-4909-aa7c-6fa44c5849a2"
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "You are almost\nthere!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "ff97c3b7-f12d-4909-aa7c-6fa44c5849a2"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Way to go!"
+                                            ],
+                                            "avatarId": ""
+                                        },
+                                        "id": "e74d15f7-1901-4615-97e5-67a8d5a4ae45"
+                                    }
+                                ]
+                            },
+                            "id": "1594d961-f4a1-4f2f-9de5-3242141de5f7"
                         }
                     ],
                     "leaveScript": []
+                },
+                {
+                    "name": "StepIntoMistTrigger",
+                    "id": "dd76f501-5d7f-4f91-bbcc-9937cd3b89ca",
+                    "x": 16,
+                    "y": 12,
+                    "symbol": "trigger_6",
+                    "width": 1,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "T0",
+                                "operation": "set",
+                                "other": "false",
+                                "vectorY": "L0",
+                                "value": "0",
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": false
+                            },
+                            "id": "3eb4420c-a9cb-45c2-ad8f-fdbdd27563da"
+                        },
+                        {
+                            "command": "EVENT_VARIABLE_MATH",
+                            "args": {
+                                "vectorX": "T1",
+                                "operation": "set",
+                                "other": "false",
+                                "vectorY": "L0",
+                                "value": "0",
+                                "minValue": "0",
+                                "maxValue": "32767",
+                                "clamp": false
+                            },
+                            "id": "f579d8d1-013b-42b9-ac14-e29c9b4047d7"
+                        }
+                    ],
+                    "leaveScript": [],
+                    "notes": ""
                 }
             ],
             "script": [
@@ -579,11 +658,20 @@
                         "variable": "T0"
                     },
                     "id": "a6e6c83f-99fa-4a1d-9780-fd39520e23b8"
+                },
+                {
+                    "command": "EVENT_SET_TRUE",
+                    "args": {
+                        "variable": "T1",
+                        "__collapse": false
+                    },
+                    "id": "645b942e-20e3-4e83-9bca-2c5b307bef49"
                 }
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
-            "playerHit3Script": []
+            "playerHit3Script": [],
+            "notes": "As the player enters the fog, the Temp0 variable is used to keep track of the totally wrong way.\nTemp1 is used to determine from which door the player entered the scene."
         }
     ],
     "backgrounds": [
@@ -1513,7 +1601,13 @@
             "filename": "sweat.png"
         }
     ],
-    "variables": [],
+    "variables": [
+        {
+            "id": "fefc7b21-f51a-4d44-b849-f19ea292ec0d__L0",
+            "name": "Local 0",
+            "symbol": "var_local_0"
+        }
+    ],
     "engineFieldValues": [
         {
             "id": "fade_style",
