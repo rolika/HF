@@ -1496,14 +1496,15 @@
                                                     "children": {
                                                         "true": [
                                                             {
-                                                                "command": "EVENT_TEXT",
+                                                                "command": "EVENT_SWITCH_SCENE",
                                                                 "args": {
-                                                                    "text": [
-                                                                        "Different."
-                                                                    ],
-                                                                    "avatarId": ""
+                                                                    "sceneId": "ca7e04e3-98b7-4070-960f-b381a23a5b09",
+                                                                    "x": 0,
+                                                                    "y": 0,
+                                                                    "direction": "",
+                                                                    "fadeSpeed": "2"
                                                                 },
-                                                                "id": "8b30963f-d607-426e-81ee-a02cca539584"
+                                                                "id": "1599dd62-66bd-4997-aa54-ce632ae2deb7"
                                                             }
                                                         ],
                                                         "false": [
@@ -1535,31 +1536,123 @@
             ],
             "script": [
                 {
-                    "command": "EVENT_SET_VALUE",
+                    "command": "EVENT_IF_TRUE",
                     "args": {
-                        "variable": "0",
-                        "value": {
-                            "type": "number",
-                            "value": 0
-                        }
+                        "variable": "1",
+                        "__collapseElse": false,
+                        "__collapse": true
                     },
-                    "id": "18b302d5-e156-4eba-82b0-6bea064bb744"
+                    "children": {
+                        "true": [],
+                        "false": [
+                            {
+                                "command": "EVENT_SET_FALSE",
+                                "args": {
+                                    "variable": "1"
+                                },
+                                "id": "608b670c-9cbd-4c7a-8248-ea2579a88f71"
+                            }
+                        ]
+                    },
+                    "id": "06126d0c-26da-4cd6-8314-ed22a2b4f6d0"
                 },
                 {
-                    "command": "EVENT_SET_FALSE",
+                    "command": "EVENT_IF_VALUE",
                     "args": {
-                        "variable": "1"
+                        "variable": "0",
+                        "operator": ">",
+                        "comparator": "0",
+                        "__collapseElse": false,
+                        "__collapse": true
                     },
-                    "id": "608b670c-9cbd-4c7a-8248-ea2579a88f71"
+                    "children": {
+                        "true": [],
+                        "false": [
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "0",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 0
+                                    }
+                                },
+                                "id": "18b302d5-e156-4eba-82b0-6bea064bb744"
+                            }
+                        ]
+                    },
+                    "id": "87d09b51-7757-4b53-9e91-c7b7a660c20c"
                 }
             ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
-            "notes": "The player receives a hint (about the poison mist level) if he/she:\n- checks the tree in the middle;\n- checks at least 2 other trees;\n- checks the tree in the middel again.\n(Order matters.)"
+            "notes": "The player receives a hint (about the poison mist level) if he checks:\n- the tree in the middle;\n- at least 2 other trees;\n- the tree in the middle again.\n(Order matters.)",
+            "autoFadeEventCollapse": false
+        },
+        {
+            "name": "Engraved Bark",
+            "backgroundId": "ed06dfce-88ca-428a-bea1-df5af902d45c",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [],
+            "autoFadeSpeed": 1,
+            "id": "ca7e04e3-98b7-4070-960f-b381a23a5b09",
+            "symbol": "scene_3",
+            "x": 388.9884169884169,
+            "y": 30,
+            "actors": [],
+            "triggers": [],
+            "script": [
+                {
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "$self$"
+                    },
+                    "id": "c4a7866b-ff47-4722-9c2c-85b2dc8419d6"
+                },
+                {
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Barely visible,\nyet it's there.",
+                            "An old engravement\nin the treebark."
+                        ],
+                        "avatarId": ""
+                    },
+                    "id": "5ffb08ad-bb99-4ed6-ad3b-eaf7527eb20d"
+                },
+                {
+                    "command": "EVENT_SWITCH_SCENE",
+                    "args": {
+                        "sceneId": "86759ec0-57db-4ac0-b61d-3d672f4d4ecf",
+                        "x": 9,
+                        "y": 12,
+                        "direction": "up",
+                        "fadeSpeed": "2"
+                    },
+                    "id": "2ba48cc2-685c-4c37-95c1-3a900579ab48"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": []
         }
     ],
     "backgrounds": [
+        {
+            "id": "ed06dfce-88ca-428a-bea1-df5af902d45c",
+            "name": "engraved_bark",
+            "symbol": "bg_engraved_bark",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "engraved_bark.png"
+        },
         {
             "id": "9972a1ab-9fa6-46c9-8b3c-dbc6419aad3c",
             "name": "forest_clearing_scene",
@@ -2529,7 +2622,7 @@
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 284,
-        "worldScrollY": 0,
+        "worldScrollY": 53,
         "zoom": 259,
         "customColorsEnabled": false,
         "sgbEnabled": false,
