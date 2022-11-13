@@ -41,26 +41,6 @@
                 0,
                 15,
                 0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                0,
-                15,
-                0,
-                0,
-                15,
-                0,
                 15,
                 15,
                 15,
@@ -71,6 +51,26 @@
                 15,
                 15,
                 15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                0,
+                0,
+                15,
+                0,
+                15,
+                0,
+                0,
+                15,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
                 15,
                 0,
                 0,
@@ -467,7 +467,19 @@
                     "symbol": "trigger_3",
                     "width": 2,
                     "height": 1,
-                    "script": [],
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "86759ec0-57db-4ac0-b61d-3d672f4d4ecf",
+                                "x": 17,
+                                "y": 9,
+                                "direction": "left",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "2e2b2e5b-7ced-4f4f-98db-572b8a711c5d"
+                        }
+                    ],
                     "leaveScript": []
                 },
                 {
@@ -521,7 +533,7 @@
                                                     "args": {
                                                         "sceneId": "8c9f2fb1-3a8c-4ea2-91b5-9743e8060d11",
                                                         "x": 4,
-                                                        "y": 0,
+                                                        "y": 2,
                                                         "direction": "down",
                                                         "fadeSpeed": "2"
                                                     },
@@ -672,9 +684,892 @@
             "playerHit2Script": [],
             "playerHit3Script": [],
             "notes": "As the player enters the fog, the Temp0 variable is used to keep track of the totally wrong way.\nTemp1 is used to determine from which door the player entered the scene."
+        },
+        {
+            "name": "Forest Clearing Scene",
+            "backgroundId": "9972a1ab-9fa6-46c9-8b3c-dbc6419aad3c",
+            "width": 20,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                0,
+                0,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                0,
+                0,
+                15,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "autoFadeSpeed": 1,
+            "id": "86759ec0-57db-4ac0-b61d-3d672f4d4ecf",
+            "symbol": "scene_2",
+            "x": 188.98841698841684,
+            "y": 30.3861003861004,
+            "actors": [],
+            "triggers": [
+                {
+                    "name": "ExitToPosionMistTrigger",
+                    "id": "32c47e6a-6f91-4636-a7cb-2c15fc985dd1",
+                    "x": 19,
+                    "y": 8,
+                    "symbol": "trigger_1",
+                    "width": 1,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SWITCH_SCENE",
+                            "args": {
+                                "sceneId": "8c9f2fb1-3a8c-4ea2-91b5-9743e8060d11",
+                                "x": 4,
+                                "y": 1,
+                                "direction": "down",
+                                "fadeSpeed": "2"
+                            },
+                            "id": "09cb2d5d-91b2-4cf4-a9a9-080b5f525d23"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "CommonTreeTrigger",
+                    "id": "94407fa1-9e5f-4f52-af1a-3bd7a6405048",
+                    "x": 1,
+                    "y": 10,
+                    "symbol": "trigger_7",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "b",
+                                    "a"
+                                ],
+                                "override": true,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "1",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The trees seem a\nbit different."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "342ac97f-a987-4d07-907f-94b5a2691714"
+                                                },
+                                                {
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "0"
+                                                    },
+                                                    "id": "3d313240-9430-4720-b19b-66cf6c6a4f10"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "These trees look\nall the same."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "8507e61a-5c0a-49af-af44-1ff55d2fb8fe"
+                                                }
+                                            ]
+                                        },
+                                        "id": "69430906-2d14-404f-b07b-f782fd4ac5b6"
+                                    }
+                                ]
+                            },
+                            "id": "4dbca88e-e1f2-4861-9c63-c9815848364d"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "CommonTreeTrigger",
+                    "id": "8d50ac85-2313-4dba-9a7c-bf0630eefc11",
+                    "x": 11,
+                    "y": 6,
+                    "symbol": "trigger_9",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "b",
+                                    "a"
+                                ],
+                                "override": true,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "1",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The trees seem a\nbit different."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "0e028044-0241-4f13-8e33-07f3c796c02b"
+                                                },
+                                                {
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "0"
+                                                    },
+                                                    "id": "5300a057-9869-4e20-8496-cc163c66c145"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "These trees look\nall the same."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "8a34b1d1-326a-4e6d-9d18-a9925446e812"
+                                                }
+                                            ]
+                                        },
+                                        "id": "92887512-ecd8-4f59-81e5-c5f7e0c775fa"
+                                    }
+                                ]
+                            },
+                            "id": "146a3634-2198-470f-926f-62421ce4c7a9"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "CommonTreeTrigger",
+                    "id": "60785d0c-ea80-4a9b-8fe9-2dc9a9b4d4fd",
+                    "x": 15,
+                    "y": 6,
+                    "symbol": "trigger_11",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "b",
+                                    "a"
+                                ],
+                                "override": true,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "1",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The trees seem a\nbit different."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "90a283dd-c9bb-430f-a36f-2d326713b128"
+                                                },
+                                                {
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "0"
+                                                    },
+                                                    "id": "3cb13e98-67fa-475d-9230-df388f0c4e7c"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "These trees look\nall the same."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "4e2eff46-510c-44e1-85e5-43b895c319c0"
+                                                }
+                                            ]
+                                        },
+                                        "id": "6e9d065d-c6d5-47fc-9c4d-1353ddf31e1a"
+                                    }
+                                ]
+                            },
+                            "id": "31809375-73bd-43ba-8565-dcf7d67d0255"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "CommonTreeTrigger",
+                    "id": "c36e358e-052c-42fe-a178-d6a63e0b03de",
+                    "x": 7,
+                    "y": 6,
+                    "symbol": "trigger_8",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "b",
+                                    "a"
+                                ],
+                                "override": true,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "1",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The trees seem a\nbit different."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "f2161205-2cb5-4b70-94e8-3512364c5108"
+                                                },
+                                                {
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "0"
+                                                    },
+                                                    "id": "cf3d3ff1-26b5-4df8-b992-00b11b01c862"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "These trees look\nall the same."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "565ff562-6b18-4bdc-9b42-2c81855bcb53"
+                                                }
+                                            ]
+                                        },
+                                        "id": "2142a547-0162-45cd-a743-75d53b769d38"
+                                    }
+                                ]
+                            },
+                            "id": "791467e4-9e80-46bf-8b5d-13bbdfbb51c0"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "CommonTreeTrigger",
+                    "id": "90374d2b-8802-4a99-8b51-11035495d915",
+                    "x": 3,
+                    "y": 6,
+                    "symbol": "trigger_12",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "b",
+                                    "a"
+                                ],
+                                "override": true,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "1",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "The trees seem a\nbit different."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "ce40476c-2a0b-4e32-96d1-e5347e6da16d"
+                                                },
+                                                {
+                                                    "command": "EVENT_INC_VALUE",
+                                                    "args": {
+                                                        "variable": "0"
+                                                    },
+                                                    "id": "5897dc9f-46ac-4b9c-9a71-24a29518900d"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "These trees look\nall the same."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "01a84572-b1b2-42e7-8e6c-2134ce5ebc56"
+                                                }
+                                            ]
+                                        },
+                                        "id": "5d85c185-46c8-47a7-8305-d45ac56d21f4"
+                                    }
+                                ]
+                            },
+                            "id": "339ace95-6ce6-4819-bca5-590b3e7d23f3"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "32cceda0-6fa6-4bf6-8c1e-a859ba8f9370",
+                    "x": 9,
+                    "y": 12,
+                    "symbol": "trigger_13",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_INPUT_SCRIPT",
+                            "args": {
+                                "input": [
+                                    "b",
+                                    "a"
+                                ],
+                                "override": true,
+                                "__scriptTabs": "press"
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_IF_FALSE",
+                                        "args": {
+                                            "variable": "1",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "These trees look\nall the same."
+                                                        ],
+                                                        "avatarId": ""
+                                                    },
+                                                    "id": "43378234-5eef-4c24-9147-1cba21957fc5"
+                                                },
+                                                {
+                                                    "command": "EVENT_VARIABLE_MATH",
+                                                    "args": {
+                                                        "vectorX": "1",
+                                                        "operation": "set",
+                                                        "other": "true",
+                                                        "vectorY": "L0",
+                                                        "value": "0",
+                                                        "minValue": "0",
+                                                        "maxValue": "32767",
+                                                        "clamp": false
+                                                    },
+                                                    "id": "9b1983cd-356d-45c8-bcb9-c4a0347d6447"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "command": "EVENT_IF_VALUE",
+                                                    "args": {
+                                                        "variable": "0",
+                                                        "operator": ">=",
+                                                        "comparator": 2,
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Different."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "8b30963f-d607-426e-81ee-a02cca539584"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "The trees seem a\nbit different."
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                },
+                                                                "id": "0315c4e3-9a46-42d8-9181-14816741a37f"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "id": "65cd0491-10b9-4a2f-a2d6-aca1489aecc5"
+                                                }
+                                            ]
+                                        },
+                                        "id": "3f6cbc30-63b3-4e01-9a77-ecd6463e814c"
+                                    }
+                                ]
+                            },
+                            "id": "90428db7-fa42-4c81-9ae8-e9ee14c51b8c"
+                        }
+                    ],
+                    "leaveScript": []
+                }
+            ],
+            "script": [
+                {
+                    "command": "EVENT_SET_VALUE",
+                    "args": {
+                        "variable": "0",
+                        "value": {
+                            "type": "number",
+                            "value": 0
+                        }
+                    },
+                    "id": "18b302d5-e156-4eba-82b0-6bea064bb744"
+                },
+                {
+                    "command": "EVENT_SET_FALSE",
+                    "args": {
+                        "variable": "1"
+                    },
+                    "id": "608b670c-9cbd-4c7a-8248-ea2579a88f71"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": [],
+            "notes": "The player receives a hint (about the poison mist level) if he/she:\n- checks the tree in the middle;\n- checks at least 2 other trees;\n- checks the tree in the middel again.\n(Order matters.)"
         }
     ],
     "backgrounds": [
+        {
+            "id": "9972a1ab-9fa6-46c9-8b3c-dbc6419aad3c",
+            "name": "forest_clearing_scene",
+            "symbol": "bg_forest_clearing_scene",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "forest_clearing_scene.png"
+        },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
             "name": "placeholder",
@@ -1606,6 +2501,16 @@
             "id": "fefc7b21-f51a-4d44-b849-f19ea292ec0d__L0",
             "name": "Local 0",
             "symbol": "var_local_0"
+        },
+        {
+            "id": "0",
+            "name": "checkedTrees",
+            "symbol": "var_checkedtrees"
+        },
+        {
+            "id": "1",
+            "name": "middleTreeChecked",
+            "symbol": "var_middletreechecked"
         }
     ],
     "engineFieldValues": [
@@ -1615,16 +2520,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "8c9f2fb1-3a8c-4ea2-91b5-9743e8060d11",
-        "startX": 4,
-        "startY": 1,
+        "startSceneId": "86759ec0-57db-4ac0-b61d-3d672f4d4ecf",
+        "startX": 0,
+        "startY": 13,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
-        "startDirection": "down",
+        "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 284,
-        "worldScrollY": 313,
+        "worldScrollY": 0,
         "zoom": 259,
         "customColorsEnabled": false,
         "sgbEnabled": false,

@@ -3,20 +3,29 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "poison_mist_level.tmx",
+    "activeFile": "forest_clearing_scene.tmx",
     "expandedProjectPaths": [
+        "."
     ],
     "fileStates": {
         "bgr_tiles.tsx": {
             "scaleInDock": 3,
             "scaleInEditor": 1
         },
+        "forest_clearing_scene.tmx": {
+            "scale": 5.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 48.81818181818183,
+                "y": 68.36363636363637
+            }
+        },
         "poison_mist_level.tmx": {
             "scale": 8,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 79.0625,
-                "y": 72.625
+                "x": 79.9375,
+                "y": 72
             }
         }
     },
@@ -27,13 +36,15 @@
     "map.tileWidth": 16,
     "map.width": 10,
     "openFiles": [
+        "poison_mist_level.tmx",
         "bgr_tiles.tsx",
-        "poison_mist_level.tmx"
+        "forest_clearing_scene.tmx"
     ],
     "project": "HF.tiled-project",
     "recentFiles": [
+        "poison_mist_level.tmx",
         "bgr_tiles.tsx",
-        "poison_mist_level.tmx"
+        "forest_clearing_scene.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
